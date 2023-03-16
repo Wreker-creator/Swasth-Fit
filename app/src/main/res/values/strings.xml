@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CollegeMajorProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sf">Swasth-Fit</string>
+    <string name="ocr">OCR</string>
+    <string name="chat_bot">ChatBot</string>
+
+    <string name="onBoarding1Details">Swasth-Fit is a Rural Health Care System where you can upload your prescription given by the doctor to have a better and clear visual understanding of it.</string>
+
+
+    <string name="onBoarding2Details">OCR stands for Optical Character Recognition, which is a technology that allows computers to recognize and extract text from scanned images, photographs, or other digital files.</string>
+
+
+    <string name="onBoarding3Details">Yet to add this.</string>
+
+</resources>

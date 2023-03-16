@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/SplashFragment">
+
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.wreker.collegemajorproject.splashAndOnBoarding.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/ViewPagerFragment"
+            app:popUpTo="@id/SplashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_HomeFragment"
+            app:destination="@id/FragmentHome"
+            app:popUpTo="@id/SplashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/ViewPagerFragment"
+        android:name="com.wreker.collegemajorproject.splashAndOnBoarding.viewPager.ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_HomeFragment"
+            app:destination="@id/FragmentHome"
+            app:popUpTo="@id/ViewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentHome"
+        android:name="com.wreker.collegemajorproject.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/FragmentMCQ"
+        android:name="com.wreker.collegemajorproject.ui.MCQFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_m_c_q" />
+    <fragment
+        android:id="@+id/FragmentNews"
+        android:name="com.wreker.collegemajorproject.ui.NewsFragment"
+        android:label="Latest News"
+        tools:layout="@layout/fragment_news" />
+</navigation>
