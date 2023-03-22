@@ -9,7 +9,10 @@ object ArticleMapper {
 
     fun buildFrom(response : Article) : DomainArticle {
         return DomainArticle(
-            title = response.title
+            title = response.title,
+            subTitle = response.description,
+            imageUrl = response.urlToImage,
+            publishedAt = response.publishedAt
         )
     }
 
